@@ -6,6 +6,7 @@ In this workshop you will learn the main features of ES6 and beyond.
 
 ## Table of Contents <!-- omit in toc -->
 
+- [Getting Started](#getting-started)
 - [Workshop Material](#workshop-material)
 - [var vs let vs const](#var-vs-let-vs-const)
 - [Block Scopes](#block-scopes)
@@ -19,6 +20,8 @@ In this workshop you will learn the main features of ES6 and beyond.
 - [`async`/`await`](#asyncawait)
 - [Template Literals](#template-literals)
 - [Classes](#classes)
+
+## Getting Started
 
 First, you will need to clone the repo:
 
