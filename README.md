@@ -1251,3 +1251,11 @@ l.speak();
 // Fuzzy makes a noise.
 // Fuzzy roars.
 ```
+
+## Author <!-- omit in toc -->
+
+[Dani Lucaci](https://github.com/danilucaci)
+
+## License <!-- omit in toc -->
+
+[MIT](https://choosealicense.com/licenses/mit/)
