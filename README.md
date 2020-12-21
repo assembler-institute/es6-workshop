@@ -1075,7 +1075,7 @@ async function waitForTask() {
 
 ## Template Literals
 
-Template literals allow us to perform string concatenation in a much easier way that before.
+Template literals allow us to perform string concatenation in a much easier way than before.
 
 ```js
 const age = 20;
