@@ -181,9 +181,7 @@ let myAge = 40;
 
 #### Block Scope
 
-Variables that are declared using the `var` keyword are initialized with a default value of `undefined` if we access them before the variable is initialized.
-
-On the other hand, variables declared with `let` or `const` are not initialized with any value and trying to read or change their values will cause an error.
+Variables that are declared using the `var` keyword have a global or a function scope. Variables declared with `let` or `const` create a block scope besides the function scope that `var` also create.
 
 ```js
 function sayVarName() {
