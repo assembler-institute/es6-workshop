@@ -966,6 +966,8 @@ fetch("https://jsonplaceholder.typicode.com/users/")
 
 We can also specify the different options we might use to define the request such as the request method, among others.
 
+If you'd like to learn more about fetch, you can use this link: [Fetch API](https://javascript.info/fetch)
+
 ```js
 fetch("https://jsonplaceholder.typicode.com/users/", {
   // GET, POST, PUT, DELETE, etc.
