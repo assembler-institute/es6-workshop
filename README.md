@@ -673,7 +673,7 @@ console.log(found); // => 1
 
 ## ES Modules
 
-      Modules allow us to split our code in different files so that we can better **reuse, organize, modularize, and maintain** our code.
+Modules allow us to split our code in different files so that we can better **reuse, organize, modularize, and maintain** our code.
 
 ### Declaring And Exporting Modules
 
