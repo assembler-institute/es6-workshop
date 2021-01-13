@@ -1090,6 +1090,8 @@ const es6Ana = `My name is: ${name} and I am ${age} years old`;
 
 ### Multi-Line Strings
 
+Template literals also make it easier to create multi-line string.
+
 ```js
 console.log("string text line 1\n" + "string text line 2");
 // "string text line 1
@@ -1102,6 +1104,8 @@ string text line 2`);
 ```
 
 ### Tagged Template Literals
+
+Tagged template literals allow us to perform an operation on each of the strings and variables of the template literal received.
 
 ```js
 function tag(strings, expression1, expression2, expression3) {
