@@ -1235,7 +1235,7 @@ d.speak(); // => Mitzie barks.
 
 ### Super `class` Calls with `super()`
 
-The `super` keyword is used to call corresponding methods of super class. This is one advantage over prototype-based inheritance.
+The `super` keyword is used to call corresponding methods of the super class. This is one advantage over prototype-based inheritance.
 
 ```js
 class Cat {
