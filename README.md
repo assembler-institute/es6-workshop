@@ -679,7 +679,8 @@ Modules allow us to split our code in different files so that we can better **re
 
 ### Declaring And Exporting Modules
 
-We can either declare several functions or variables that we export as named exports, or we can declare a default export that will be the default exported function or variable exported from the entire module.
+There are a couple of ways to export a module from a file: **named exports** and **default export**. For instance, **named exports** allow us to export multiple values, and by calling a specific name we will be able to use its corresponding value.
+About default export, in the other hand, **can only be one** per module, either be a function, an object, or anything else, and will be the default element exported from the entire module.
 
 ```js
 // Open the utils.js file to practice
