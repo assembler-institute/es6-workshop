@@ -643,6 +643,8 @@ console.log(pets.includes("cat")); // => true
 
 The `Array.find()` method returns the value of the first element in the provided array that satisfies the provided testing function.
 
+Otherwise, it returns `undefined`, indicating that no element passed the test.
+
 ```js
 const array1 = [5, 12, 8, 130, 44];
 
