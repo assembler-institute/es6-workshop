@@ -644,7 +644,7 @@ console.log(pets.includes("cat")); // => true
 The `Array.find()` method returns the value of the first element in the provided array that satisfies the provided testing function.
 
 ```js
-const arr1 = [5, 12, 8, 130, 44];
+const array1 = [5, 12, 8, 130, 44];
 
 // const found = arrar1.find(elem => eleme > 10);
 
