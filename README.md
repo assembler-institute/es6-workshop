@@ -784,7 +784,7 @@ export function trimPassword(password) {
 }
 
 // modules-main.js
-import { trimPassword as shortenPassword } from "./namespace";
+import { trimPassword as shortenPassword } from "./es-modules/namespace";
 
 const password = shortenPassword("  12345   ");
 console.log(password); // 12345
