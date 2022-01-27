@@ -1,6 +1,6 @@
-`#es6` `#assembler-school` `#master-in-software-engineering`
+`#es6` `#assembler-institute` `#master-in-software-development`
 
-# Assembler School: ES6 Workshop <!-- omit in toc -->
+# Assembler Institute: ES6 Workshop <!-- omit in toc -->
 
 In this workshop you will learn the main features of ES6 and beyond.
 
@@ -26,7 +26,7 @@ In this workshop you will learn the main features of ES6 and beyond.
 First, you will need to clone the repo:
 
 ```bash
-$ git clone https://github.com/assembler-school/es6-workshop.git
+$ git clone https://github.com/assembler-institute/es6-workshop.git
 ```
 
 Then, you will have to install all the dependencies with npm:
