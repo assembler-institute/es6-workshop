@@ -1111,7 +1111,7 @@ Tagged template literals allow us to perform an operation on each of the strings
 
 ```js
 function tag(strings, expression1, expression2, expression3) {
-  console.log(strings); // => ["My name is ", ", I’m a "]
+  console.log(strings); // => ["My name is ", ", I’m a ", " ", ""]
 
   console.log(strings[0]); // => "My name is "
   console.log(strings[1]); // => ", I’m a "
