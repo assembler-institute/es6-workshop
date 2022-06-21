@@ -20,6 +20,10 @@ In this workshop you will learn the main features of ES6 and beyond.
 - [`async`/`await`](#asyncawait)
 - [Template Literals](#template-literals)
 - [Classes](#classes)
+- [Set objects](#set-objects)
+- [High ordered functions](#high-ordered-functions)
+- [Optional chaining](#optional-chaining)
+
 
 ## Getting Started
 
@@ -1261,9 +1265,96 @@ l.speak();
 // Fuzzy roars.
 ```
 
+## Set objects
+
+In ES6, Javascript got introduced the Set object, which lets you store unique values of any type, whether primitive values or object references.
+
+Set objects are collections of values. You can iterate through the elements of a set in insertion order. A value in the Set may only occur once; it is unique in the Set's collection.
+
+More information about Set object can be found in [MDN web docs - Set object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set).
+
+
+## High ordered functions
+
+The implementation of high ordered functions is really important for new array methods that we will use constantly in ES6 implementations and further, such as map, filter or even a forEach method.
+
+The way we understand high ordered functions is like functions that perform operations on other functions. To give an example:
+
+```js
+// Without high ordered function
+const numbers = [1, 2, 3, 4, 5];
+
+function addOne(array) {
+  for (let i = 0; i < array.length; i++) {
+    console.log(array[i] + 1);
+  }
+}
+
+addOne(numbers);
+
+// With high ordered function
+
+const numbers = [1, 2, 3, 4, 5];
+
+numbers.forEach((number) => console.log(number + 1));
+```
+
+## Optional chaining
+
+When, in ES5, we tried to access a property that did not existed for an entry in an object, we could get an error that prevented our program to continue. To avoid it, we could previously make an if statement to conclude if the property existed and, if not, stop the execution or move to another part of our code.
+
+This conditional could be very confusing and not easy to read or maintain.
+
+In ES6 JavaScript got the optional chaining method, by using a `?` before access the property that may not exist.
+
+```js
+const firstPerson = {
+  name: "Phil",
+  lastname: "Dunphy",
+  hobbies: {
+    soccer: false,
+    trampolines: true
+  }
+}
+
+const secondPerson = {
+  name: "Manny",
+  lastname: "Delgado"
+}
+
+console.log(firstPerson.hobbies.soccer) // false
+
+console.log(secondPerson.hobbies.soccer) // TypeError: Cannot read properties of undefined (reading 'soccer')
+
+console.log(secondPerson.hobbies?.soccer) // undefined
+```
+
+We can use optional chaining for properties of a variable, but also with dynamic expresions, functions and arrays:
+
+```js
+  obj?.prop
+  obj?.[expr]
+  arr?.[index]
+  func?.(args)
+
+  // As an example, using the previous code:
+
+  function getValue(attribute) {
+    console.log(secondPerson?.[attribute]?.soccer)
+  }
+
+  getValue("hobbies") // undefined
+
+```
+
+You can find more info about this topic in the [MDN webdocs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining)
+
+
 ## Author <!-- omit in toc -->
 
 [Dani Lucaci](https://github.com/danilucaci)
+
+[Carlos Velilla](https://github.com/CarlosVelilla)
 
 ## License <!-- omit in toc -->
 
