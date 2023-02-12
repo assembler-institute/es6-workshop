@@ -1109,29 +1109,6 @@ string text line 2`);
 // string text line 2"
 ```
 
-### Tagged Template Literals
-
-Tagged template literals allow us to perform an operation on each of the strings and variables of the template literal received.
-
-```js
-function tag(strings, expression1, expression2, expression3) {
-  console.log(strings); // => ["My name is ", ", I’m a ", " ", ""]
-
-  console.log(strings[0]); // => "My name is "
-  console.log(strings[1]); // => ", I’m a "
-
-  console.log(expression1); // => Ana
-  console.log(expression2); // => 30
-  console.log(expression3); // => developer
-}
-
-const name = "Ana";
-const age = 30;
-const profession = "developer";
-
-tag`My name is ${name}, I’m a ${age} ${profession}`;
-```
-
 ## Classes
 
 In ES6 JavaScript gained support for the `class` keyword, making it easier to program in a Object Oriented way.
